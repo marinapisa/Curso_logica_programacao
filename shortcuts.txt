@@ -1,0 +1,8 @@
+Atalhos VScode:
+
+Ctrl + Shift + Up / Down = Seleciona grupos de linhas
+Alt + Shift + Up / Down = Duplica linha para cima ou para baixo
+Ctrl + : = Comenta linhas
+Ctrl + D = Seleciona a palavra onde o cursor está,
+clicando novamente seleciona a próxima palavra que seja igual a selecionada
+Ctrl + Alt + Shift + Up /  Down = Ampliar o cursor para mais linhas

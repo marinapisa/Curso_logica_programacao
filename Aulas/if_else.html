@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Lendo dados
+        let numero1 = parseInt(prompt("Informe o primeiro número: "))
+        let numero2 = parseInt(prompt("Informe o segundo número: "))
+        let numero3 = parseInt(prompt("Informe o terceiro número: "))
+        let numero4 = parseInt(prompt("Informe o quarto número: "))
+
+        // //Verificar se input é válido
+        // if (isNaN(numero1) || isNaN(numero2)) {
+        // console.error("Informe números válidos!")
+        // console.warn("Informe números válidos!")
+        // console.log("Informe números válidos!")
+        // }
+
+
+        // // Condições IF:
+        // if (numero1 > numero2) {
+        //     console.log("Primeiro numero é maior que o segundo numero!")
+        // } else {
+        //     console.log("Segundo numero é maior que o primeiro numero!")
+        // }
+
+        // // Condições (IF ELSE)
+        // // Verificar se alguns dos numeros é maior que o primeiro numero
+        // if (numero2 > numero1) {
+        //     console.log("Segundo numero é maior que o primeiro numero!")
+        // } else if (numero3  > numero1) {
+        //     console.log("Terceiro numero é maior que o primeiro numero!")
+        // } else if (numero4 > numero1) {
+        //     console.log("Quarto numero é maior que o primeiro numero!")
+        // } else {
+        //     console.log("Nenhum dos números é maior que o primeiro numero!")
+        // }
+
+
+        // // Condições (IF ELSE)
+        // // Verificar se alguns dos numeros é maior que o primeiro numero
+        // if (numero1 > numero2 && numero1 > numero3 && numero1 > numero4) {
+        //     console.log("Numero " + numero1 + " é o maior numero!")
+        // } else {
+        //     console.log("Numero " + numero1 + " não é o maior numero!")
+        // }
+
+        // IF's aninhados:
+        if (numero1 > numero2) {
+            console.log("Primeiro numero " + numero1 + " é o maior que " + numero2);
+            if (numero3 > numero4) {
+                console.log("Terceiro numero " + numero3 + " é o maior que " + numero4);
+            } else {
+                console.log("Terceiro numero " + numero3 + " não é o maior que " + numero4);
+            }
+        } else {
+            console.log("Primeiro numero " + numero1 + " não é o maior que " + numero2);
+        }
+
+    </script>
+</body>
+</html>
