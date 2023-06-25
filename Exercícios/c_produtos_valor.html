@@ -1,1 +1,63 @@
-!  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // c - Haverá uma lista com três produtos que uma lanchonete vende, o usuário
+        // precisa informar o código do produto, em seguida o valor pago por ele. Nosso
+        // sistema precisa retornar o troco que deve ser dado ao cliente, valide caso o
+        // cliente informe um pagamento inferior ao valor do pedido.
+        // Código Pedido Valor:
+        //     1 Pizza R$ 12,00
+        //     2 Pão de Queijo R$ 4,00
+        //     3 Macarrão R$ 16,00
+
+
+        //Declarando as constantes
+        // const pizza = 12
+        // const pao_de_queijo = 4
+        // const macarrao = 16
+
+        // // variaveis
+        //  pedido_1
+        //  pedido_2
+        //  pedido_3
+
+
+        //Apresentar cardápio ao cliente e solicitar código do produto:
+        alert ("Cardápio: \n1) Pizza R$ 12,00  \n2) Pão de Queijo R$ 4,00   \n3) Macarrão R$ 16,00")
+
+        let pedido = parseInt(prompt ("Digite o código do produto escolhido: "))
+
+        //Declarando variaveis
+        let valor_pedido
+        let troco
+            
+        //Atribuindo valor ao pedido:
+        if (pedido === 1 ) {
+                valor_pedido = 12
+            } else if (pedido === 2) {
+                valor_pedido = 4
+            } else if (pedido === 3) {
+                valor_pedido = 16
+            } else (alert ('Código digitado é inválido!'))
+            // como abortar ou fazer questionar novamente ao digitar valor inválido?
+
+    
+        // solicitando o valor pago:
+        let valor_pago = parseFloat(prompt ("Digite o valor pago: "))
+
+        //Validar se pagamento é inferior ao valor do pedido
+        if (valor_pago < valor_pedido) {
+            (alert ('valor pago é menor que o valor do pedido!'))
+        } else troco = valor_pago - valor_pedido
+            console.log('Troco a ser dado: R$' + troco.toFixed(2))
+
+
+    </script>
+</body>
+</html> 
