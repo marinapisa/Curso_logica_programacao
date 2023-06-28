@@ -12,29 +12,35 @@
         // desconto sobre o valor do produto, caso eletrônico 8% e alimentício 10%.
         // (Usando IF)
 
-        //Precisamos da variável Nome do produto
-        //Precisamos da variável valor
-        // Precisamos da variavel segmento (vestuário, eletronico ou alimento)
+        // Precisamos da variavel nome do protudo
+        // Precisamos da variavel valor
+        // Precisamos da variavel segmento (vestuário, eletrônico ou alimentício)
         // Precisamos da variavel desconto
-
-        // Verificar com if qual desconto aplicar para qual produto/segmento
-
-            //se o produto eh vestuario - else / if
-                //block 1
-                //Ajustar o desconto
-
-            // caso seja eletronico - else / if
-                //block 2
-                //Ajustar o desconto
-
-            // caso seja alimenticio - else / if
-                //block 3
-                //Ajustar o desconto
-
-        //Realizar o calculo do desconto
-
-        //Mostrar o resultado final
+        let produto = prompt('Informe o nome do produto: ')
+        let valor_produto = parseFloat(prompt('informe o valor do produto: '))
+        let segmento = parseInt(prompt('Informe o código do segmento do produto: \n1 - Vestuário \n2 - Eletrônico \n3 - Alimentício'))
+        let desconto = 0
         
-    </script>
+
+        switch (segmento) {
+                case 1:
+                desconto = valor_produto * 0.05
+            break
+                case 2:
+                desconto = valor_produto * 0.08
+            break
+                case 3: 
+                desconto = valor_produto * 0.10
+            default:
+                desconto = alert('Informe um segmento válido!')
+
+        }
+
+        let valor_com_desconto = valor_produto - desconto
+
+        alert('Produto: ' + produto + '\nCom valor: ' + valor_produto + '\nE desconto de: ' + desconto + '\nPassa a ter o valor com desconto de: ' + valor_com_desconto.toFixed(2))
+
+        
+    </script>
 </body>
 </html>

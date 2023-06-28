@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Array = lista
+        // Trabalhando com listas 
+        //                       0        1       2       3      4
+        let lista_de_dados = ['Banana','Maça','Abacaxi','Uva','Pêra']
+
+        //length = quantidade (buscando o tamanho da lista, quantidade de itens que tem dentro)
+        let quantidade = lista_de_dados.length 
+        alert ('quantidade de itens na lista: ' + quantidade)
+
+        //Mostrar todos os itens da lista 
+        //criar uma variável só para o for, por padrão é o 'i', 
+        //após o ; é enquanto o i for menor que o tamanho da lista, o i recebe 1 a mais
+        //[i] - posição dos itens - acesse o item dessa lista que esta na posição deste numero, 
+        //a posição é o numero que adiciona a cada vez que roda
+        for (let i = 0; i < lista_de_dados.length; i++) {
+            alert(i + ' Item = ' + lista_de_dados[i])
+        }
+
+        // substituir valor na lista na posição do numero que esta entre []
+        lista_de_dados[1] = 'Jabuticaba'
+        alert(lista_de_dados)
+
+        //Loop for para verificar quais numeors de 1 a 20 sao impares ou pares
+        //% 2 == 0 resultado da divisao igual a 0 entao é par
+        let lista_de_numeros = [22, 154, 3344, 104, 305, 77, 66, 808, 999, 1000]
+        let soma_impares = 0
+        let soma_pares = 0
+
+        for (let i = 0; i < lista_de_numeros.length; i++) {
+            if (lista_de_numeros[i] % 2 ==0) {
+                soma_pares++
+                alert(lista_de_numeros[i] + ' numero é PAR!')
+            } else {
+                soma_impares++
+                alert(lista_de_numeros[i] + ' numero é IMPAR!')
+            }
+        }
+        
+        alert ('Quantidade de pares ' + soma_pares)
+        alert ('Quantidade de impares ' + soma_impares)
+
+        //Percorrer lista até achar impar
+
+        let lista_numeros = [4, 6, 16, 24, 15, 28]
+
+        for (let i = 0; i < lista_numeros.length; i++) {
+            //verificar se é impar
+            if (lista_numeros[i] % 2 != 0) {
+                alert(lista_numeros[i] + ' é impar')
+                break
+            } else {
+                alert(lista_numeros[i] + ' é par')
+
+            }
+        }
+
+
+
+        //Inversão loop invertido
+        //lista dinamina, com varios tipos de dados
+        //variável começa cm valor alto pois vamos percorerr do ultimo ao primeiro
+        //
+        let lista = [1, 2, 3, 4, 'python', 'javascript', true, 7, false, 25.0]
+
+        for (let i = 9; i >= 0; i--) {
+            alert('O item ' + lista[i] + ' esta na posição ' + i +' e é do tipo ' + typeof lista[i])
+        }
+
+
+
+
+
+
+    </script>
+</body>
+</html>

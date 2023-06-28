@@ -16,22 +16,63 @@
 
         //Ler as informações
         // 1 - tipo de conversão (nós temos que mostrar os tipos)
-        
 
+        let conversao = 0
+        let frase = ''
+        
         // Usar o switch para selecionar a opção
         // Variável para o resultado da conversão
+        do {
+            let valor = parseFloat(prompt('Informe o valor que deseja converter:'))
+            let moeda = parseInt(prompt('Escolha uma das conversões: \n1 - Real para Dolar \n2 - Dólar para Real \n3 - Real para Euro \n4 - Euro para Real'))
 
+            switch (moeda) {
+                case 1:
+                    conversao = valor / 5.25
+                    frase = 'O valor convertido fica: $'
+                    break
+                case 2:
+                    conversao = valor * 5.25
+                    frase = 'O valor convertido fica: R$'
+                    break
+                case 3:
+                    conversao = valor / 6.13
+                    frase = 'O valor convertido fica: €'
+                    break
+                case 4:
+                    conversao = valor * 6.13
+                    frase = 'O valor convertido fica: R$'
+                    break
+                default:
+                    conversao = 'Informe um código válido!'
+                }
+
+            //Após o switch nós vamos mostrar o resultado da conversão escolhida
+            if (typeof conversao === 'string') {
+                alert(conversao)
+            } else {
+                alert(frase + conversao.toFixed(2))
+
+            }
+            
+
+        }            
+            while (true)
+            
         
-        //Após o switch nós vamos mostrar o resultado da conversão escolhida
-
-
-
-
-
-
-
-
         
-    </script>
+
+       
+
+
+
+
+
+
+
+
+
+        
+    </script>
 </body>
 </html>
