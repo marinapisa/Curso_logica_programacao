@@ -7,7 +7,7 @@
 </head>
 <body>
     <script>
-        //Matriz ( ua lista com varias listas)
+        //Matriz ( uma lista com varias listas)
         //como se fosse uma tabela
         let lista = [
             [1, 2, 3]
@@ -17,13 +17,19 @@
             [5, 8, 9]
         ]
 
-        for ( let i = 0; i <= lista.length; i++) {
-            for (let j = 0; j <= lista[i].length; j++) {
-                alert(lista[i][j])
+        //Acessando as sublistas da lista com o primeiro for
+        for ( let linha = 0; linha < lista.length; linha++) {
+            //Acessando os itens da sublista com o segundo for
+            for (let coluna = 0; coluna <= lista[linha].length; coluna++) {
+                alert(lista[linha][coluna])
 
-                alert('linha ' + i + ' coluna ' + j + ' tem item ' + lista[i][j])
+                alert('linha ' + linha + ' coluna ' + coluna + ' tem item ' + lista[linha][coluna])
             }
         }
+
+
+        // mostrando um item específico dentro da lista = 78
+        alert(lista[2][2])
 
 
 
