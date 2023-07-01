@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //d - O usuário informa cinco números, em seguida exiba em ordem contrária que foram
+        //informados.
+
+        //ler os 5 numeros e armazenar em uma lista com prompt e while
+
+        let numero = []
+        let contador_numeros_informados = 0
+
+        while (contador_numeros_informados < 5) {
+            let usuario_infor_numero = parseFloat(prompt('Digite o ' + (contador_numeros_informados + 1) + 'º numero: '))
+            numero.push(usuario_infor_numero)
+            contador_numeros_informados++
+        }
+
+        
+        // let numeros_aocontrario = 'teste'
+        // for (let i = numero.length - 1; i >= 0;i-- ) {
+        //     numeros_aocontrario += numero[i]
+        //     if (i != 0) {
+        //         numeros_aocontrario += ', '
+        //     }
+        // }
+
+        alert(' os numeros informados são: ' + numero[4]+', ' + numero[3] + numero[2] + numero[1] + numero[0])
+
+       
+
+        
+
+    </script>
+</body>
+</html>

@@ -12,8 +12,21 @@
         //em seguida exiba seus valores.
 
         //variável para a lista com 5 cidades
+        let lista_de_cidades = []
+        let contador_da_lista = 0
+
+        while (contador_da_lista < 5) {
+            let usuario_informa_cidades = prompt('Informe a ' + (contador_da_lista + 1) + 'ª cidade: ')
+            lista_de_cidades.push(usuario_informa_cidades)
+            contador_da_lista++
+        }
 
         //exiba os valores da lista usanod um for loop
+
+        alert('As cidades informadas foram: ' + lista_de_cidades)
+
+    
+        
 
         
 
