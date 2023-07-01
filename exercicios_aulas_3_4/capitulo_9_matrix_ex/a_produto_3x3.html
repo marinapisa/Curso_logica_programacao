@@ -13,6 +13,24 @@
     // usuário, essas informações podem ser pré-definidas como no exemplo de contatos,
     // assim que desenvolver a matriz, exiba os dados utilizando laços de repetição.
 
+    produtos = [
+        ['Meia','Lupo', '10'],
+        ['Camisa','Gang','89.90'],
+        ['Tênis','Vans','329.90']
+    ]
+
+    //linha = posição da linha
+    //coluna = posição da coluna
+
+    for (let linha = 0; linha < produtos.length; linha++) {
+        for (let coluna = 0; coluna <= produtos[linha].length; coluna++){
+            alert(produtos[linha][coluna])
+        }
+    }
+
+    //ESTA RETORNANDO 'UNDEFINED' APÓS APRESENTAR OS DADOS DE CADA LINHA
+    //QUANDO RETIRO O = DO <=, NA LINHA 26 NÃO APRESENTA MAIS O 'UNDEFINED'
+
 
 
 

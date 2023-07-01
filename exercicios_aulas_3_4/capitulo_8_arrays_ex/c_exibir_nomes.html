@@ -19,18 +19,23 @@
 
         while (nome != 'sair') {
             //usar o prompt para pedir o nome
-
+            nome = prompt('Informe um nome ou sair para finalizar: ')
             // verificar se o usuário informou 'sair'
-            //se informou sair vamos parar o programa, 
-            
-            //senao
-            //usar o push para colocar o nome na lista
+            if (nome === 'sair') {
+                 //se informou sair vamos parar o programa,
+                break
+            //senao, usar o push para colocar o nome na lista
+            } else {
+                //adicionar a quantidade de nomes digitados a lista
+                lista_nomes.push(nome)
+            }
         }
 
         //após o loop parar informe a quantidade de nomes que foram informados
+        alert('Os nomes informados são: ' + lista_nomes)
+        alert('A quantidade de nomes informados é: ' + lista_nomes.length)
 
-        // exibir todos os itens da lista
-        //usando um for loop
+      
 
 
 
