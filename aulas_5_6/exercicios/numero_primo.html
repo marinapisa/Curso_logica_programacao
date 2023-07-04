@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Exercicio 1 - Verificar se o numero é primo (usar if, for, e function)
+
+        function eh_primo(numero_usuario) {
+            //numeros < que 2 não são primos
+            if (numero_usuario < 2) {
+                return false
+            }
+
+
+            // numeros que nao podem ser divididos entre o intervalo 
+            // de 2 e o numero informado pelo usuário, não são primos
+            for (let i=2;i < numero_usuario;i++) {
+                //se o resultado da divisão e todos os numeros q ele esta percorrendo dividido por valor de i nao retornar zero é falso
+                if (numero_usuario % i === 0 ) {
+                    return false
+                }
+            }
+            return true
+        }
+
+        let numero_usuario = parseInt(prompt('Informe um número: '))
+        if (eh_primo(numero_usuario)) {
+            alert('O número ' + numero_usuario + ' é primo!')
+        } else {
+            alert ('O número ' + numero_usuario + ' não é primo!')
+        }
+
+        console.log ('verificando 100 numeros: ')
+        for (let i=1;i<=100;i++) {
+            let retorno = eh_primo(i)
+
+            if (retorno == true) {
+                console.log ('O número ' + i + ' é primo!')
+            } else {
+                console.log ('O número ' + i + ' não é primo!')   
+            }
+        }
+
+
+
+    </script>
+</body>
+</html>

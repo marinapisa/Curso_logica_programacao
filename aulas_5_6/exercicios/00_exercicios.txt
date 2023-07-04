@@ -1,0 +1,5 @@
+Exercicio 1 - Verificar se o numero é primo (usar if, for, e function)
+
+Execicio 2 - Contar quantas vezes uma letra aparece numa string (usar if, for efunction)
+
+Exercicio 3 - Calcular a soma dos numeros pares em um intervalo (usar if, while e function)

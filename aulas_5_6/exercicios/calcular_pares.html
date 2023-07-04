@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Exercicio 3 - Calcular a soma dos numeros pares em um intervalo (usar if, while e function)
+
+        //Criar função que realiza soma dos numeros no intervalo
+
+        function somar_pares_intervalo (numero_inicio,numero_final) {
+            let soma_dos_pares = 0
+            let contador = numero_inicio
+            // precisa ter uma variavel para soma e uma variavel para o contador do while
+
+            //usar o while e o contador para passar por todos os numeros
+            // entre o numero inicial e o numero final passados pelo usuário
+            while(contador <= numero_final) {
+                contador ++
+                if (contador % 2 == 0) {
+                    soma_dos_pares += contador
+                }
+
+                //somar os pares
+            }
+            return soma_dos_pares
+
+            //incrementar nosso contador contador ++
+
+        }
+
+
+
+
+        //ler os dados colocando os mesmos em variáveis
+        let numero_inicio = parseInt(prompt('Informe o numero inicial: '))
+        let numero_final = parseInt(prompt('Informe o numero final: '))
+        let resultado = somar_pares_intervalo(numero_inicio,numero_final)
+        console.log ('A soma dos pares é: ' + resultado)
+        // e passando eles via parametros para a função
+
+
+
+
+        // mostrar o resultado para o usuário
+
+
+
+
+
+
+    </script>
+</body>
+</html>
