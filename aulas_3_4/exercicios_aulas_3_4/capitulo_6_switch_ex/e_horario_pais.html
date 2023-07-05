@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //         e - O usuário informa o horário atual no Brasil (apenas hora), em seguida
+        // informa um país. Retorne o horário daquele país se baseando pela hora
+        // informada. Cadastre ao menos três países diferentes
+
+        let horario_brasil = parseInt(prompt('Informe a hora atual no Brasil: '))
+        let pais = prompt('Informe o país que deseja saber que horas são com base no horário do Brasil agora \nItália \nReino Unido \nCanada \nAustrália:')
+        let horario_ajustado = 0
+
+        switch (pais.toLowerCase()) {
+            case 'itália':
+                horario_ajustado = horario_brasil + 5
+                break
+            case 'reino unido':
+                horario_ajustado = horario_brasil + 4
+                break
+            case 'canada':
+                horario_ajustado = horario_brasil - 1
+                break
+            case 'australia':
+                horario_ajustado = horario_brasil + 13
+                break
+            default:
+                alert('País não encontrado!')
+        }
+            // se a soma do horario_brasil + valor for maior que 24, pegamos esse resultado e diminuimos 24, por exemplo:
+            // horário_ajustado = horario_brasil (22) + 5 = 27 (não existe hora 27) então fazemos 27 - 24 = 3 horas da manhã.
+            // mesma coisa caso o resultado de negativo, só que ai somamos 24 a este valor negativo, por exemplo: -3 +24 = 21 horas   
+        if (horario_ajustado > 24) {
+            horario_ajustado = horario_ajustado - 24
+        } else if (horario_ajustado < 0) {
+            horario_ajustado = horario_ajustado + 24
+        }
+
+        alert('País ' + pais + '\nHorário: ' + horario_ajustado)
+        
+    </script>
+</body>
+</html>
