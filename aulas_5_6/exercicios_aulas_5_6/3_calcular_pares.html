@@ -18,10 +18,12 @@
 
             //usar o while e o contador para passar por todos os numeros
             // entre o numero inicial e o numero final passados pelo usuário
+            // percorendo todos os numeros do interbvaloe entre inicial e final
+            //e esta incrementando a variavel soma do pares e  toda vez que um numero no intervalo é par
             while(contador <= numero_final) {
                 contador ++
                 if (contador % 2 == 0) {
-                    soma_dos_pares += contador
+                    soma_dos_pares = soma_dos_pares + contador
                 }
 
                 //somar os pares
@@ -31,9 +33,6 @@
             //incrementar nosso contador contador ++
 
         }
-
-
-
 
         //ler os dados colocando os mesmos em variáveis
         let numero_inicio = parseInt(prompt('Informe o numero inicial: '))
